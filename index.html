@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StarBreath — Hand Loop emergency oxygen</title>
+  <meta name="description" content="StarBreath Hand Loop: a manual bellows that circulates a spacecraft rebreather and meters oxygen when the fan is dead. Concept for Starship and the Moon.">
+  <link rel="canonical" href="https://fitzyracing1.github.io/starbreath/">
+  <meta property="og:title" content="StarBreath — Hand Loop">
+  <meta property="og:description" content="Fan-out backup for spacecraft oxygen and rebreather loops. Manual bellows, LiOH canister, counted oxygen add.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fitzyracing1.github.io/starbreath/">
+  <meta property="og:image" content="https://fitzyracing1.github.io/starbreath/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="StarBreath — Hand Loop">
+  <meta name="twitter:description" content="Manual emergency oxygen and rebreather bellows for spacecraft and the Moon.">
+  <meta name="twitter:image" content="https://fitzyracing1.github.io/starbreath/og.jpg">
+  <meta name="x:game:image" content="https://fitzyracing1.github.io/starbreath/x-banner.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <div class="brand">STAR<span>BREATH</span></div>
+      <nav>
+        <a href="#why">Why</a>
+        <a href="#modes">Modes</a>
+        <a href="#spec">Spec</a>
+        <a href="#safety">Safety</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <p class="kicker">Repo starbreath · concept unit</p>
+        <h1>Hand Loop</h1>
+        <p class="lede">A manual bellows for emergency oxygen on a ship like Starship, or on the Moon. It pumps the rebreather loop when the fan dies, and meters oxygen into that loop. It does not compress bottle oxygen by hand.</p>
+        <div class="actions">
+          <a class="btn primary" href="#modes">Two modes</a>
+          <a class="btn ghost" href="#spec">Numbers</a>
+        </div>
+      </div>
+      <figure class="hero-card">
+        <img src="images/hand-loop.jpg" alt="Cutaway of the StarBreath Hand Loop bellows, LiOH canister, check valves, and mask hoses">
+        <figcaption>Hand Loop. Bellows, scrubber can, oxygen add, relief, mask hoses.</figcaption>
+      </figure>
+    </section>
+
+    <section id="why">
+      <h2>Pump the loop, not the bottle</h2>
+      <p class="sub">Stored oxygen is already at pressure. What fails in a blackout is circulation. In microgravity there is no convection, so carbon dioxide pools at the face.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="num">01 · FAN</div>
+          <h3>The real failure</h3>
+          <p>Apollo’s portable life support moved gas through lithium hydroxide with a fan, about six cubic feet a minute. The backup was an open purge to vacuum, about thirty minutes. A closed hand loop saves that gas.</p>
+        </article>
+        <article class="card">
+          <div class="num">02 · LUNGS</div>
+          <h3>When the crew can still breathe</h3>
+          <p>A conscious person can drive a personal rebreather. The bellows is for an unconscious crew member, a dead cabin fan, or a canister you cannot breathe through yourself.</p>
+        </article>
+        <article class="card">
+          <div class="num">03 · SHIP</div>
+          <h3>Starship cabin</h3>
+          <p>Cabin air is near one atmosphere, not pure oxygen. One Hand Loop on a bulkhead rail washes faces until power or a purge bottle is back. Oxygen still comes from the regulated bottles.</p>
+        </article>
+        <article class="card">
+          <div class="num">04 · MOON</div>
+          <h3>Surface suit</h3>
+          <p>Do not replace suit cooling with a hand pump. Use the bellows to stay breathable long enough to reach the airlock. Keep an open-circuit purge bottle as the last path. Buddy hose still wins.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="modes">
+      <h2>One lever, two modes</h2>
+      <p class="sub">Springs move the check valves. Gravity does not. The unit works in free fall and in one-sixth g.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="num">LOOP</div>
+          <h3>Rebreather circulation</h3>
+          <p>Inlet from mask or cabin, through the LiOH or soda-lime can, back to the mask or a face-level vent. Both check valves in series. This replaces the fan.</p>
+        </article>
+        <article class="card">
+          <div class="num">ADD</div>
+          <h3>Counted oxygen</h3>
+          <p>A needle valve from a regulated bottle or soft bladder feeds the bellows outlet. Each stroke doses a known volume. The stroke counter is the flow meter.</p>
+        </article>
+      </div>
+      <figure class="figure dark">
+        <img src="images/schematic.jpg" alt="Side cutaway schematic of loop mode and oxygen add mode">
+        <figcaption>Gas path. White is loop air. Amber is metered oxygen. Relief sits ahead of the mask.</figcaption>
+      </figure>
+    </section>
+
+    <section id="spec">
+      <h2>Concept spec</h2>
+      <p class="sub">Sizing for washout, not suit cooling. A person at rest uses about 0.3 L/min of oxygen and makes about 0.25 L/min of CO2.</p>
+      <div class="card">
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Target</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Stroke</td><td>1.5 L positive displacement</td></tr>
+            <tr><td>Rate</td><td>20 strokes/min → about 30 L/min</td></tr>
+            <tr><td>Coverage</td><td>CO2 washout for one person, or two if the outlet is at the face</td></tr>
+            <tr><td>Not this unit</td><td>Suit cooling. That still needs water loop or open purge</td></tr>
+            <tr><td>Canister</td><td>Axial LiOH or soda lime, spring-packed, bayonet swap. About 1 kg, a few person-hours</td></tr>
+            <tr><td>Relief</td><td>Cracks before a hard stroke can load a mask or suit seal</td></tr>
+            <tr><td>Gas path</td><td>Stainless, aluminum, PTFE. No oil. Oxygen-compatible grease only, off the gas path</td></tr>
+            <tr><td>Drive</td><td>Long cabin handle, chest strap for one person, foot bar for the Moon</td></tr>
+            <tr><td>Dust</td><td>Bellows, not a piston. Lunar dust kills sliding seals</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="safety">
+      <h2>Safety bound</h2>
+      <div class="callout">
+        <strong>Concept only.</strong> This is not a flight unit and not a medical device. Pure oxygen is a fire hazard. Apollo 1 was a pure-oxygen cabin. Design the gas path for 100 percent oxygen even if the ship cabin is air. No ignition sources, no soft goods that burn, relief before burst. Life support needs oxygen-compatibility tests, scrubber duration tests, and a relief valve that cannot be defeated.
+      </div>
+    </section>
+
+    <footer>
+      <p>StarBreath · repo <code>starbreath</code> · Hand Loop concept for spacecraft and lunar emergency oxygen. Pages expect <code>https://fitzyracing1.github.io/starbreath/</code>. Change the host in <code>index.html</code> if the owner differs.</p>
+    </footer>
+  </div>
+</body>
+</html>
